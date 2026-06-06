@@ -1,5 +1,6 @@
 import React from 'react'
 import "../auth.form.scss"
+import { useNavigate, Link } from 'react-router'
 
 function Login() {
 
@@ -23,8 +24,10 @@ function Login() {
             <button className='button primary-button'>Login</button>
 
         </form>
+        <p>Don't have an Account? <Link to={"/register"}>Register</Link></p>
       </div>
     </main>
+    
   )
 }
 
