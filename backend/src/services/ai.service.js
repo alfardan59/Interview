@@ -41,7 +41,7 @@ async function generateInterviewReport({resume,selfDescription,jobDescription}){
     `
     const response=await ai.models.generateContent({
         model:"gemini-3-flash-preview",
-        content:prompt,
+        contents:prompt,
         config:{
             responseMimeType : "application/json",
             responseSchema : zodToJsonSchema(interviewReportSchema)
